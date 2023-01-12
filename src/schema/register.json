@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "properties" : {
+    "data" : {
+      "type" : "string",
+      "minLength" : 0,
+      "maxLength" : 300
+    },
+    "message" : {
+      "type" : "string",
+      "minLength" : 0,
+      "maxLength" : 300
+    },
+    "status" : {
+      "type" : "string",
+      "minLength" : 0,
+      "maxLength" : 300
+    }
+  },
+  "required": [
+    "data",
+    "message",
+    "status"
+  ]
+}

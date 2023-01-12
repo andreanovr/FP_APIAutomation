@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "properties" : {
+    "access_token" : {
+      "type" : "string",
+      "minLength" : 0,
+      "maxLength" : 500
+    },
+    "refresh_token" : {
+      "type" : "string",
+      "minLength" : 0,
+      "maxLength" : 500
+    },
+    "scope" : {
+      "type" : "string",
+      "minLength" : 0,
+      "maxLength" : 300
+    },
+    "token_type" : {
+      "type" : "string",
+      "minLength" : 0,
+      "maxLength" : 300
+    },
+    "expires_in" : {
+      "type" : "integer",
+      "minLength" : 0,
+      "maxLength" : 300
+    },
+    "jti" : {
+      "type" : "string",
+      "minLength" : 0,
+      "maxLength" : 300
+    }
+  },
+  "required": [
+    "access_token",
+    "refresh_token",
+    "scope",
+    "token_type",
+    "expires_in",
+    "jti"
+  ]
+}

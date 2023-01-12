@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="13.47">
+    <testcase classname="auth" name="01 check API register functionality" time="5.341">
+        <system-out><![CDATA[Given API register..........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="auth" name="02 check API change password functionality" time="1.49">
+        <system-out><![CDATA[Given API change password...................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="auth" name="03 check API login functionality" time="3.733">
+        <system-out><![CDATA[Given API login.............................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="auth" name="04 check API forgot password functionality" time="0.772">
+        <system-out><![CDATA[Given API forgot password...................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="auth" name="05 check API register send-otp functionality" time="0.967">
+        <system-out><![CDATA[Given API register send-otp.................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="auth" name="06 check API confirm email functionality" time="0.887">
+        <system-out><![CDATA[Given API confirm email.....................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
