@@ -2,39 +2,25 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "integer",
-      "minLength" : 0,
-      "maxLength" : 300
+      "type": "integer"
     },
     "title": {
-      "type": "string",
-      "minLength" : 0,
-      "maxLength" : 300
+      "type": "string"
     },
     "type": {
-      "type": "string",
-      "minLength" : 0,
-      "maxLength" : 300
+      "type": "string"
     },
     "stock": {
-      "type": "integer",
-      "minLength" : 0,
-      "maxLength" : 300
+      "type": "integer"
     },
     "description": {
-      "type": "string",
-      "minLength" : 0,
-      "maxLength" : 300
+      "type": "string"
     },
     "electricity": {
-      "type": "boolean",
-      "minLength" : 0,
-      "maxLength" : 300
+      "type": "boolean"
     },
     "wide": {
-      "type": "string",
-      "minLength" : 0,
-      "maxLength" : 300
+      "type": "string"
     },
     "imageUrl": {
       "type": "array",
@@ -43,69 +29,13 @@
           "type": "object",
           "properties": {
             "url": {
-              "type": "string",
-              "minLength" : 0,
-              "maxLength" : 300
+              "type": "string"
             },
             "id": {
-              "type": "string",
-              "minLength" : 0,
-              "maxLength" : 300
+              "type": "string"
             },
             "filename": {
-              "type": "string",
-              "minLength" : 0,
-              "maxLength" : 300
-            }
-          },
-          "required": [
-            "url",
-            "id",
-            "filename"
-          ]
-        },
-        {
-          "type": "object",
-          "properties": {
-            "url": {
-              "type": "string",
-              "minLength" : 0,
-              "maxLength" : 300
-            },
-            "id": {
-              "type": "string",
-              "minLength" : 0,
-              "maxLength" : 300
-            },
-            "filename": {
-              "type": "string",
-              "minLength" : 0,
-              "maxLength" : 300
-            }
-          },
-          "required": [
-            "url",
-            "id",
-            "filename"
-          ]
-        },
-        {
-          "type": "object",
-          "properties": {
-            "url": {
-              "type": "string",
-              "minLength" : 0,
-              "maxLength" : 300
-            },
-            "id": {
-              "type": "string",
-              "minLength" : 0,
-              "maxLength" : 300
-            },
-            "filename": {
-              "type": "string",
-              "minLength" : 0,
-              "maxLength" : 300
+              "type": "string"
             }
           },
           "required": [
@@ -117,52 +47,40 @@
       ]
     },
     "user_id": {
-      "type": "integer",
-      "minLength" : 0,
-      "maxLength" : 300
+      "type": "integer"
     },
     "createdBy": {
-      "type": "string",
-      "minLength" : 0,
-      "maxLength" : 300
+      "type": "string"
     },
     "createdAt": {
-      "type": "string",
-      "minLength" : 0,
-      "maxLength" : 300
+      "type": "string"
     },
     "updatedAt": {
-      "type": "string",
-      "minLength" : 0,
-      "maxLength" : 300
+      "type": "string"
     },
     "addresses": {
       "type": "object",
       "properties": {
         "id": {
-          "type": "integer",
-          "minLength" : 0,
-          "maxLength" : 300
+          "type": "integer"
         },
         "street": {
-          "type": "null",
-          "minLength" : 0,
-          "maxLength" : 300
+          "type": "string"
         },
         "village": {
-          "type": "null"
+          "type": "string"
         },
         "district": {
-          "type": "null"
+          "type": "string"
         },
         "city": {
-          "type": "null"
+          "type": "string"
         },
         "province": {
-          "type": "null"
+          "type": "string"
         },
         "postal_code": {
-          "type": "null"
+          "type": "string"
         },
         "room_id": {
           "type": "integer"
@@ -194,16 +112,16 @@
           "type": "integer"
         },
         "person": {
-          "type": "null"
+          "type": "integer"
         },
         "deposit": {
-          "type": "null"
+          "type": "integer"
         },
         "couple": {
-          "type": "null"
+          "type": "boolean"
         },
         "children": {
-          "type": "null"
+          "type": "boolean"
         },
         "room_id": {
           "type": "integer"
@@ -233,85 +151,85 @@
           "type": "integer"
         },
         "air_conditioning": {
-          "type": "null"
+          "type": "boolean"
         },
         "table": {
-          "type": "null"
+          "type": "boolean"
         },
         "ventilation": {
-          "type": "null"
+          "type": "boolean"
         },
         "pillow": {
-          "type": "null"
+          "type": "boolean"
         },
         "bed": {
-          "type": "null"
+          "type": "boolean"
         },
         "wardrobe": {
-          "type": "null"
+          "type": "boolean"
         },
         "chair": {
-          "type": "null"
+          "type": "boolean"
         },
         "mirror": {
-          "type": "null"
+          "type": "boolean"
         },
         "window": {
-          "type": "null"
+          "type": "boolean"
         },
         "wifi": {
-          "type": "null"
+          "type": "boolean"
         },
         "tv": {
-          "type": "null"
+          "type": "boolean"
         },
         "fan": {
-          "type": "null"
+          "type": "boolean"
         },
         "washing_machine": {
-          "type": "null"
+          "type": "boolean"
         },
         "refrigerator": {
-          "type": "null"
+          "type": "boolean"
         },
         "dispenser": {
-          "type": "null"
+          "type": "boolean"
         },
         "sink": {
-          "type": "null"
+          "type": "boolean"
         },
         "shower": {
-          "type": "null"
+          "type": "boolean"
         },
         "toilet": {
-          "type": "null"
+          "type": "boolean"
         },
         "hot_water": {
-          "type": "null"
+          "type": "boolean"
         },
         "bathtub": {
-          "type": "null"
+          "type": "boolean"
         },
         "inside_bathroom": {
-          "type": "null"
+          "type": "boolean"
         },
         "outside_bathroom": {
-          "type": "null"
+          "type": "boolean"
         },
         "living_room": {
-          "type": "null"
+          "type": "boolean"
         },
         "kitchen": {
-          "type": "null"
+          "type": "boolean"
         },
         "car_parking": {
-          "type": "null"
+          "type": "boolean"
         },
         "motorcycle_parking": {
-          "type": "null"
+          "type": "boolean"
         },
         "bicycle_parking": {
-          "type": "null"
+          "type": "boolean"
         },
         "room_id": {
           "type": "integer"
@@ -364,10 +282,10 @@
           "type": "integer"
         },
         "cost": {
-          "type": "null"
+          "type": "integer"
         },
         "type": {
-          "type": "null"
+          "type": "string"
         },
         "room_id": {
           "type": "integer"

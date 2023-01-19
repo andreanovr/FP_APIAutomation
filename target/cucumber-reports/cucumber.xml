@@ -1,7 +1,59 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="7.965">
-    <testcase classname="auth" name="XXX - check API Login By Google functionality" time="7.729">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="14" time="23.144">
+    <testcase classname="auth" name="TC_005 - check API register functionality" time="4.618">
+        <system-out><![CDATA[Given API register..........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="auth" name="TC_025 - check API change password functionality" time="1.437">
+        <system-out><![CDATA[Given API change password...................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="auth" name="TC_015 - check API login functionality" time="3.749">
+        <system-out><![CDATA[Given API login.............................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="auth" name="TC_020 - check API forgot password functionality" time="0.767">
+        <system-out><![CDATA[Given API forgot password...................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="auth" name="TC_010 - check API register send-otp functionality" time="0.776">
+        <system-out><![CDATA[Given API register send-otp.................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="auth" name="TC_030 - check API confirm email functionality" time="0.83">
+        <system-out><![CDATA[Given API confirm email.....................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="auth" name="TC_070 - check API Login By Google functionality" time="4.512">
         <system-out><![CDATA[Given API Login By Google...................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="roomData" name="TC_035 - check API Get All Room functionality" time="0.825">
+        <system-out><![CDATA[Given API Get All Room......................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="roomData" name="TC_040 - check API Insert Room Data functionality" time="0.887">
+        <system-out><![CDATA[Given API Insert Room Data..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="roomData" name="TC_065 - check API Get Room By ID functionality" time="0.757">
+        <system-out><![CDATA[Given API Get Room By ID....................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="roomData" name="TC_045 - check API Update Room Data functionality" time="0.74">
+        <system-out><![CDATA[Given API Update Room Data..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="roomData" name="TC_050 - check API Update Room Picture functionality" time="0.712">
+        <system-out><![CDATA[Given API Update Room Picture...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="roomData" name="TC_060 - check API Delete Room functionality" time="1.126">
+        <system-out><![CDATA[Given API Delete Room.......................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="roomData" name="TC_055 - check API Delete Room Picture functionality" time="1.084">
+        <system-out><![CDATA[Given API Delete Room Picture...............................................passed
 ]]></system-out>
     </testcase>
 </testsuite>
