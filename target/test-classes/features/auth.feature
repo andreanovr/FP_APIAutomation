@@ -1,20 +1,43 @@
 Feature: auth
 
-  Scenario: 01 check API register functionality
-    Given API register
+#  Scenario: TC_005 - check API register functionality
+#    Given API register
+#
+#  Scenario: TC_025 - check API change password functionality
+#    Given API change password
+#
+#  Scenario: TC_015 - check API login functionality
+#    Given API login
+#
+#  Scenario: TC_020 - check API forgot password functionality
+#    Given API forgot password
+#
+#  Scenario: TC_010 - check API register send-otp functionality
+#    Given API register send-otp
+#
+#  Scenario: TC_030 - check API confirm email functionality
+#    Given API confirm email
+#
+#  Scenario: TC_035 - check API Get All Room functionality
+#    Given API Get All Room
+#
+#  Scenario: TC_065 - check API Get Room By ID functionality
+#    Given API Get Room By ID
+#
+#    Scenario: TC_040 - check API Insert Room Data functionality
+#    Given API Insert Room Data
+#
+#    Scenario: TC_060 - check API Delete Room functionality
+#        Given API Delete Room
+#
+#    Scenario: TC_055 - check API Delete Room Picture functionality
+#        Given API Delete Room Picture
+#
+#    Scenario: TC_045 - check API Update Room Data functionality
+#        Given API Update Room Data
+#
+#    Scenario: TC_050 - check API Update Room Picture functionality
+#        Given API Update Room Picture
 
-  Scenario: 02 check API change password functionality
-    Given API change password
-
-  Scenario: 03 check API login functionality
-    Given API login
-
-  Scenario: 04 check API forgot password functionality
-    Given API forgot password
-
-  Scenario: 05 check API register send-otp functionality
-    Given API register send-otp
-
-  Scenario: 06 check API confirm email functionality
-    Given API confirm email
-
+  Scenario: XXX - check API Login By Google functionality
+    Given API Login By Google
