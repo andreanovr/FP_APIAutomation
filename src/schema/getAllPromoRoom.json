@@ -1,0 +1,315 @@
+{
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "title": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "stock": {
+          "type": "integer"
+        },
+        "description": {
+          "type": "string"
+        },
+        "electricity": {
+          "type": "boolean"
+        },
+        "wide": {
+          "type": "string"
+        },
+        "imageUrl": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "filename": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "url",
+                "id",
+                "filename"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "filename": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "url",
+                "id",
+                "filename"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "filename": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "url",
+                "id",
+                "filename"
+              ]
+            }
+          ]
+        },
+        "price": {
+          "type": "object",
+          "properties": {
+            "cost_day": {
+              "type": "string"
+            },
+            "cost_week": {
+              "type": "string"
+            },
+            "cost_month": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "cost_day",
+            "cost_week",
+            "cost_month"
+          ]
+        },
+        "address": {
+          "type": "object",
+          "properties": {
+            "city": {
+              "type": "string"
+            },
+            "street": {
+              "type": "string"
+            },
+            "village": {
+              "type": "string"
+            },
+            "district": {
+              "type": "string"
+            },
+            "province": {
+              "type": "string"
+            },
+            "postal_code": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "city",
+            "street",
+            "village",
+            "district",
+            "province",
+            "postal_code"
+          ]
+        },
+        "facilities": {
+          "type": "object",
+          "properties": {
+            "tv": {
+              "type": "string"
+            },
+            "bed": {
+              "type": "string"
+            },
+            "fan": {
+              "type": "string"
+            },
+            "sink": {
+              "type": "string"
+            },
+            "wifi": {
+              "type": "string"
+            },
+            "chair": {
+              "type": "string"
+            },
+            "table": {
+              "type": "string"
+            },
+            "mirror": {
+              "type": "string"
+            },
+            "pillow": {
+              "type": "string"
+            },
+            "shower": {
+              "type": "string"
+            },
+            "window": {
+              "type": "string"
+            },
+            "bathtub": {
+              "type": "string"
+            },
+            "kitchen": {
+              "type": "string"
+            },
+            "wardrobe": {
+              "type": "string"
+            },
+            "dispenser": {
+              "type": "string"
+            },
+            "hot_water": {
+              "type": "string"
+            },
+            "car_parking": {
+              "type": "string"
+            },
+            "living_room": {
+              "type": "string"
+            },
+            "ventilation": {
+              "type": "string"
+            },
+            "refrigerator": {
+              "type": "string"
+            },
+            "bicycle_parking": {
+              "type": "string"
+            },
+            "inside_bathroom": {
+              "type": "string"
+            },
+            "washing_machine": {
+              "type": "string"
+            },
+            "air_conditioning": {
+              "type": "string"
+            },
+            "outside_bathroom": {
+              "type": "string"
+            },
+            "motorcycle_parking": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "tv",
+            "bed",
+            "fan",
+            "sink",
+            "wifi",
+            "chair",
+            "table",
+            "mirror",
+            "pillow",
+            "shower",
+            "window",
+            "bathtub",
+            "kitchen",
+            "wardrobe",
+            "dispenser",
+            "hot_water",
+            "car_parking",
+            "living_room",
+            "ventilation",
+            "refrigerator",
+            "bicycle_parking",
+            "inside_bathroom",
+            "washing_machine",
+            "air_conditioning",
+            "outside_bathroom",
+            "motorcycle_parking"
+          ]
+        },
+        "rules": {
+          "type": "object",
+          "properties": {
+            "couple": {
+              "type": "string"
+            },
+            "person": {
+              "type": "string"
+            },
+            "deposit": {
+              "type": "string"
+            },
+            "children": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "couple",
+            "person",
+            "deposit",
+            "children"
+          ]
+        },
+        "discount": {
+          "type": "object",
+          "properties": {
+            "is_discount": {
+              "type": "string"
+            },
+            "discount_percentage": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "is_discount",
+            "discount_percentage"
+          ]
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "type",
+        "stock",
+        "description",
+        "electricity",
+        "wide",
+        "imageUrl",
+        "price",
+        "address",
+        "facilities",
+        "rules",
+        "discount",
+        "createdBy",
+        "updatedAt"
+      ]
+    }
+  ]
+}
