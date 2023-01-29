@@ -21,5 +21,11 @@ Feature: roomData
 #  Scenario: TC_085 - Check API Get All Approval Functionality
 #    Given API Get All Approval
 #
-  Scenario: TC_090 - Check API Get All Room Need Approval Functionality
-    Given API All Room Need Approval
+#  Scenario: TC_090 - Check API Get All Room Need Approval Functionality
+#    Given API All Room Need Approval
+#
+#  Scenario: TC_095 - Check API Get All Banner Functionality
+#    Given API Get All Banner
+
+  Scenario: TC_100 - Check API Get All Promo Room By Owner Functionality
+    Given API Get All Promo Room By Owner

@@ -1,0 +1,93 @@
+{
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "title": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "stock": {
+          "type": "integer"
+        },
+        "description": {
+          "type": "string"
+        },
+        "electricity": {
+          "type": "boolean"
+        },
+        "wide": {
+          "type": "string"
+        },
+        "imageUrl": {
+          "type": "array",
+          "items": {}
+        },
+        "price": {
+          "type": "object"
+        },
+        "address": {
+          "type": "object",
+          "properties": {
+            "street": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "street"
+          ]
+        },
+        "facilities": {
+          "type": "object"
+        },
+        "rules": {
+          "type": "object"
+        },
+        "discount": {
+          "type": "object",
+          "properties": {
+            "is_discount": {
+              "type": "string"
+            },
+            "discount_percentage": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "is_discount",
+            "discount_percentage"
+          ]
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "type",
+        "stock",
+        "description",
+        "electricity",
+        "wide",
+        "imageUrl",
+        "price",
+        "address",
+        "facilities",
+        "rules",
+        "discount",
+        "createdBy",
+        "updatedAt"
+      ]
+    }
+  ]
+}

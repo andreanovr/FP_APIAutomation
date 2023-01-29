@@ -258,4 +258,40 @@ public class main extends config {
                         new File("src/schema/allRoomNeedApproval.json")))
                 .extract().response().asString();
     }
+
+    @Given("API Get All Banner")
+    public void getAllBanner() {
+        given().log().all()
+                .header("Content-Type", "application/json")
+                .when().get(baseUrlFSW+"banner")
+                .then().assertThat().statusCode(200)
+                .body(JsonSchemaValidator.matchesJsonSchema(
+                        new File("src/schema/getAllBanner.json")))
+                .extract().response().asString();
+    }
+
+    @Given("API Get All Promo Room By Owner")
+    public void getAllPromoRoomByOwner() {
+        String response = given().log().all()
+                .header("Content-Type", "application/json")
+                .body("{\n" +
+                        "    \"email\": \""+superField+"\",\n" +
+                        "    \"password\": \""+superField+"\"\n" +
+                        "}")
+                .when().post(baseUrlBE + "login")
+                .then().extract().response().asString();
+
+        System.out.println(response);
+        JsonPath js = new JsonPath(response);
+        String accessToken = js.getString("access_token");
+
+        given().log().all()
+                .header("Content-Type", "application/json")
+                .header("authorization", "bearer " +accessToken)
+                .when().get(baseUrlFSW+"promo/pemilik")
+                .then().assertThat().statusCode(200)
+                .body(JsonSchemaValidator.matchesJsonSchema(
+                        new File("src/schema/getAllPromoRoomByOwner.json")))
+                .extract().response().asString();
+    }
 }
