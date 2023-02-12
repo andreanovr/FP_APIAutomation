@@ -1,4 +1,5 @@
 {
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "array",
   "items": [
     {
@@ -7,234 +8,51 @@
         "id": {
           "type": "integer"
         },
-        "title": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        },
-        "stock": {
+        "booking_id": {
           "type": "integer"
         },
-        "description": {
-          "type": "string"
-        },
-        "electricity": {
-          "type": "boolean"
-        },
-        "wide": {
-          "type": "string"
-        },
-        "imageUrl": {
-          "type": "array",
-          "items": {}
-        },
-        "user_id": {
+        "payment_id": {
           "type": "integer"
+        },
+        "picture": {
+          "type": "null"
         },
         "admin_id": {
           "type": "null"
         },
-        "approved": {
-          "type": "object",
-          "properties": {
-            "isApprovalRoom": {
-              "type": "boolean"
-            },
-            "statusApprovalRoom": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "isApprovalRoom",
-            "statusApprovalRoom"
-          ]
-        },
-        "price": {
+        "approval_transaction": {
           "type": "object"
         },
-        "address": {
+        "status_transaction": {
           "type": "object",
           "properties": {
-            "city": {
+            "status": {
               "type": "string"
             },
-            "street": {
-              "type": "string"
-            },
-            "village": {
-              "type": "string"
-            },
-            "district": {
-              "type": "string"
-            },
-            "province": {
-              "type": "string"
-            },
-            "postal_code": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "city",
-            "street",
-            "village",
-            "district",
-            "province",
-            "postal_code"
-          ]
-        },
-        "facilities": {
-          "type": "object",
-          "properties": {
-            "tv": {
-              "type": "string"
-            },
-            "bed": {
-              "type": "string"
-            },
-            "fan": {
-              "type": "string"
-            },
-            "sink": {
-              "type": "string"
-            },
-            "wifi": {
-              "type": "string"
-            },
-            "chair": {
-              "type": "string"
-            },
-            "table": {
-              "type": "string"
-            },
-            "mirror": {
-              "type": "string"
-            },
-            "pillow": {
-              "type": "string"
-            },
-            "shower": {
-              "type": "string"
-            },
-            "window": {
-              "type": "string"
-            },
-            "bathtub": {
-              "type": "string"
-            },
-            "kitchen": {
-              "type": "string"
-            },
-            "wardrobe": {
-              "type": "string"
-            },
-            "dispenser": {
-              "type": "string"
-            },
-            "hot_water": {
-              "type": "string"
-            },
-            "car_parking": {
-              "type": "string"
-            },
-            "living_room": {
-              "type": "string"
-            },
-            "ventilation": {
-              "type": "string"
-            },
-            "refrigerator": {
-              "type": "string"
-            },
-            "bicycle_parking": {
-              "type": "string"
-            },
-            "inside_bathroom": {
-              "type": "string"
-            },
-            "washing_machine": {
-              "type": "string"
-            },
-            "air_conditioning": {
-              "type": "string"
-            },
-            "outside_bathroom": {
-              "type": "string"
-            },
-            "motorcycle_parking": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "tv",
-            "bed",
-            "fan",
-            "sink",
-            "wifi",
-            "chair",
-            "table",
-            "mirror",
-            "pillow",
-            "shower",
-            "window",
-            "bathtub",
-            "kitchen",
-            "wardrobe",
-            "dispenser",
-            "hot_water",
-            "car_parking",
-            "living_room",
-            "ventilation",
-            "refrigerator",
-            "bicycle_parking",
-            "inside_bathroom",
-            "washing_machine",
-            "air_conditioning",
-            "outside_bathroom",
-            "motorcycle_parking"
-          ]
-        },
-        "rules": {
-          "type": "object",
-          "properties": {
-            "couple": {
-              "type": "string"
-            },
-            "person": {
-              "type": "string"
-            },
-            "deposit": {
-              "type": "string"
-            },
-            "children": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "couple",
-            "person",
-            "deposit",
-            "children"
-          ]
-        },
-        "discount": {
-          "type": "object",
-          "properties": {
-            "is_discount": {
+            "isSucces": {
               "type": "boolean"
             },
-            "discount_percentage": {
-              "type": "integer"
+            "description": {
+              "type": "string"
             }
           },
           "required": [
-            "is_discount",
-            "discount_percentage"
+            "status",
+            "isSucces",
+            "description"
           ]
         },
-        "createdBy": {
-          "type": "string"
+        "total_payment": {
+          "type": "integer"
+        },
+        "rental_amount": {
+          "type": "null"
+        },
+        "date_transaction": {
+          "type": "null"
+        },
+        "pemilik_id": {
+          "type": "integer"
         },
         "createdAt": {
           "type": "string"
@@ -245,22 +63,16 @@
       },
       "required": [
         "id",
-        "title",
-        "type",
-        "stock",
-        "description",
-        "electricity",
-        "wide",
-        "imageUrl",
-        "user_id",
+        "booking_id",
+        "payment_id",
+        "picture",
         "admin_id",
-        "approved",
-        "price",
-        "address",
-        "facilities",
-        "rules",
-        "discount",
-        "createdBy",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
         "createdAt",
         "updatedAt"
       ]
@@ -271,234 +83,51 @@
         "id": {
           "type": "integer"
         },
-        "title": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        },
-        "stock": {
+        "booking_id": {
           "type": "integer"
         },
-        "description": {
-          "type": "string"
-        },
-        "electricity": {
-          "type": "boolean"
-        },
-        "wide": {
-          "type": "string"
-        },
-        "imageUrl": {
-          "type": "array",
-          "items": {}
-        },
-        "user_id": {
+        "payment_id": {
           "type": "integer"
+        },
+        "picture": {
+          "type": "null"
         },
         "admin_id": {
           "type": "null"
         },
-        "approved": {
-          "type": "object",
-          "properties": {
-            "isApprovalRoom": {
-              "type": "boolean"
-            },
-            "statusApprovalRoom": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "isApprovalRoom",
-            "statusApprovalRoom"
-          ]
-        },
-        "price": {
+        "approval_transaction": {
           "type": "object"
         },
-        "address": {
+        "status_transaction": {
           "type": "object",
           "properties": {
-            "city": {
+            "status": {
               "type": "string"
             },
-            "street": {
-              "type": "string"
-            },
-            "village": {
-              "type": "string"
-            },
-            "district": {
-              "type": "string"
-            },
-            "province": {
-              "type": "string"
-            },
-            "postal_code": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "city",
-            "street",
-            "village",
-            "district",
-            "province",
-            "postal_code"
-          ]
-        },
-        "facilities": {
-          "type": "object",
-          "properties": {
-            "tv": {
-              "type": "string"
-            },
-            "bed": {
-              "type": "string"
-            },
-            "fan": {
-              "type": "string"
-            },
-            "sink": {
-              "type": "string"
-            },
-            "wifi": {
-              "type": "string"
-            },
-            "chair": {
-              "type": "string"
-            },
-            "table": {
-              "type": "string"
-            },
-            "mirror": {
-              "type": "string"
-            },
-            "pillow": {
-              "type": "string"
-            },
-            "shower": {
-              "type": "string"
-            },
-            "window": {
-              "type": "string"
-            },
-            "bathtub": {
-              "type": "string"
-            },
-            "kitchen": {
-              "type": "string"
-            },
-            "wardrobe": {
-              "type": "string"
-            },
-            "dispenser": {
-              "type": "string"
-            },
-            "hot_water": {
-              "type": "string"
-            },
-            "car_parking": {
-              "type": "string"
-            },
-            "living_room": {
-              "type": "string"
-            },
-            "ventilation": {
-              "type": "string"
-            },
-            "refrigerator": {
-              "type": "string"
-            },
-            "bicycle_parking": {
-              "type": "string"
-            },
-            "inside_bathroom": {
-              "type": "string"
-            },
-            "washing_machine": {
-              "type": "string"
-            },
-            "air_conditioning": {
-              "type": "string"
-            },
-            "outside_bathroom": {
-              "type": "string"
-            },
-            "motorcycle_parking": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "tv",
-            "bed",
-            "fan",
-            "sink",
-            "wifi",
-            "chair",
-            "table",
-            "mirror",
-            "pillow",
-            "shower",
-            "window",
-            "bathtub",
-            "kitchen",
-            "wardrobe",
-            "dispenser",
-            "hot_water",
-            "car_parking",
-            "living_room",
-            "ventilation",
-            "refrigerator",
-            "bicycle_parking",
-            "inside_bathroom",
-            "washing_machine",
-            "air_conditioning",
-            "outside_bathroom",
-            "motorcycle_parking"
-          ]
-        },
-        "rules": {
-          "type": "object",
-          "properties": {
-            "couple": {
-              "type": "string"
-            },
-            "person": {
-              "type": "string"
-            },
-            "deposit": {
-              "type": "string"
-            },
-            "children": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "couple",
-            "person",
-            "deposit",
-            "children"
-          ]
-        },
-        "discount": {
-          "type": "object",
-          "properties": {
-            "is_discount": {
+            "isSucces": {
               "type": "boolean"
             },
-            "discount_percentage": {
-              "type": "integer"
+            "description": {
+              "type": "string"
             }
           },
           "required": [
-            "is_discount",
-            "discount_percentage"
+            "status",
+            "isSucces",
+            "description"
           ]
         },
-        "createdBy": {
-          "type": "string"
+        "total_payment": {
+          "type": "integer"
+        },
+        "rental_amount": {
+          "type": "null"
+        },
+        "date_transaction": {
+          "type": "null"
+        },
+        "pemilik_id": {
+          "type": "integer"
         },
         "createdAt": {
           "type": "string"
@@ -509,22 +138,16 @@
       },
       "required": [
         "id",
-        "title",
-        "type",
-        "stock",
-        "description",
-        "electricity",
-        "wide",
-        "imageUrl",
-        "user_id",
+        "booking_id",
+        "payment_id",
+        "picture",
         "admin_id",
-        "approved",
-        "price",
-        "address",
-        "facilities",
-        "rules",
-        "discount",
-        "createdBy",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
         "createdAt",
         "updatedAt"
       ]
@@ -535,234 +158,51 @@
         "id": {
           "type": "integer"
         },
-        "title": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        },
-        "stock": {
+        "booking_id": {
           "type": "integer"
         },
-        "description": {
-          "type": "string"
-        },
-        "electricity": {
-          "type": "boolean"
-        },
-        "wide": {
-          "type": "string"
-        },
-        "imageUrl": {
-          "type": "array",
-          "items": {}
-        },
-        "user_id": {
+        "payment_id": {
           "type": "integer"
+        },
+        "picture": {
+          "type": "null"
         },
         "admin_id": {
           "type": "null"
         },
-        "approved": {
-          "type": "object",
-          "properties": {
-            "isApprovalRoom": {
-              "type": "boolean"
-            },
-            "statusApprovalRoom": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "isApprovalRoom",
-            "statusApprovalRoom"
-          ]
-        },
-        "price": {
+        "approval_transaction": {
           "type": "object"
         },
-        "address": {
+        "status_transaction": {
           "type": "object",
           "properties": {
-            "city": {
+            "status": {
               "type": "string"
             },
-            "street": {
-              "type": "string"
-            },
-            "village": {
-              "type": "string"
-            },
-            "district": {
-              "type": "string"
-            },
-            "province": {
-              "type": "string"
-            },
-            "postal_code": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "city",
-            "street",
-            "village",
-            "district",
-            "province",
-            "postal_code"
-          ]
-        },
-        "facilities": {
-          "type": "object",
-          "properties": {
-            "tv": {
-              "type": "string"
-            },
-            "bed": {
-              "type": "string"
-            },
-            "fan": {
-              "type": "string"
-            },
-            "sink": {
-              "type": "string"
-            },
-            "wifi": {
-              "type": "string"
-            },
-            "chair": {
-              "type": "string"
-            },
-            "table": {
-              "type": "string"
-            },
-            "mirror": {
-              "type": "string"
-            },
-            "pillow": {
-              "type": "string"
-            },
-            "shower": {
-              "type": "string"
-            },
-            "window": {
-              "type": "string"
-            },
-            "bathtub": {
-              "type": "string"
-            },
-            "kitchen": {
-              "type": "string"
-            },
-            "wardrobe": {
-              "type": "string"
-            },
-            "dispenser": {
-              "type": "string"
-            },
-            "hot_water": {
-              "type": "string"
-            },
-            "car_parking": {
-              "type": "string"
-            },
-            "living_room": {
-              "type": "string"
-            },
-            "ventilation": {
-              "type": "string"
-            },
-            "refrigerator": {
-              "type": "string"
-            },
-            "bicycle_parking": {
-              "type": "string"
-            },
-            "inside_bathroom": {
-              "type": "string"
-            },
-            "washing_machine": {
-              "type": "string"
-            },
-            "air_conditioning": {
-              "type": "string"
-            },
-            "outside_bathroom": {
-              "type": "string"
-            },
-            "motorcycle_parking": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "tv",
-            "bed",
-            "fan",
-            "sink",
-            "wifi",
-            "chair",
-            "table",
-            "mirror",
-            "pillow",
-            "shower",
-            "window",
-            "bathtub",
-            "kitchen",
-            "wardrobe",
-            "dispenser",
-            "hot_water",
-            "car_parking",
-            "living_room",
-            "ventilation",
-            "refrigerator",
-            "bicycle_parking",
-            "inside_bathroom",
-            "washing_machine",
-            "air_conditioning",
-            "outside_bathroom",
-            "motorcycle_parking"
-          ]
-        },
-        "rules": {
-          "type": "object",
-          "properties": {
-            "couple": {
-              "type": "string"
-            },
-            "person": {
-              "type": "string"
-            },
-            "deposit": {
-              "type": "string"
-            },
-            "children": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "couple",
-            "person",
-            "deposit",
-            "children"
-          ]
-        },
-        "discount": {
-          "type": "object",
-          "properties": {
-            "is_discount": {
+            "isSucces": {
               "type": "boolean"
             },
-            "discount_percentage": {
-              "type": "integer"
+            "description": {
+              "type": "string"
             }
           },
           "required": [
-            "is_discount",
-            "discount_percentage"
+            "status",
+            "isSucces",
+            "description"
           ]
         },
-        "createdBy": {
-          "type": "string"
+        "total_payment": {
+          "type": "integer"
+        },
+        "rental_amount": {
+          "type": "null"
+        },
+        "date_transaction": {
+          "type": "null"
+        },
+        "pemilik_id": {
+          "type": "integer"
         },
         "createdAt": {
           "type": "string"
@@ -773,22 +213,16 @@
       },
       "required": [
         "id",
-        "title",
-        "type",
-        "stock",
-        "description",
-        "electricity",
-        "wide",
-        "imageUrl",
-        "user_id",
+        "booking_id",
+        "payment_id",
+        "picture",
         "admin_id",
-        "approved",
-        "price",
-        "address",
-        "facilities",
-        "rules",
-        "discount",
-        "createdBy",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
         "createdAt",
         "updatedAt"
       ]
@@ -799,86 +233,51 @@
         "id": {
           "type": "integer"
         },
-        "title": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        },
-        "stock": {
-          "type": "null"
-        },
-        "description": {
-          "type": "string"
-        },
-        "electricity": {
-          "type": "boolean"
-        },
-        "wide": {
-          "type": "string"
-        },
-        "imageUrl": {
-          "type": "array",
-          "items": {}
-        },
-        "user_id": {
+        "booking_id": {
           "type": "integer"
+        },
+        "payment_id": {
+          "type": "integer"
+        },
+        "picture": {
+          "type": "null"
         },
         "admin_id": {
           "type": "null"
         },
-        "approved": {
+        "approval_transaction": {
+          "type": "object"
+        },
+        "status_transaction": {
           "type": "object",
           "properties": {
-            "isApprovalRoom": {
+            "status": {
+              "type": "string"
+            },
+            "isSucces": {
               "type": "boolean"
             },
-            "statusApprovalRoom": {
+            "description": {
               "type": "string"
             }
           },
           "required": [
-            "isApprovalRoom",
-            "statusApprovalRoom"
+            "status",
+            "isSucces",
+            "description"
           ]
         },
-        "price": {
-          "type": "object"
+        "total_payment": {
+          "type": "integer"
         },
-        "address": {
-          "type": "object",
-          "properties": {
-            "street": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "street"
-          ]
+        "rental_amount": {
+          "type": "null"
         },
-        "facilities": {
-          "type": "object"
+        "date_transaction": {
+          "type": "null"
         },
-        "rules": {
-          "type": "object"
-        },
-        "discount": {
-          "type": "object",
-          "properties": {
-            "is_discount": {
-              "type": "boolean"
-            },
-            "discount_percentage": {
-              "type": "integer"
-            }
-          },
-          "required": [
-            "is_discount",
-            "discount_percentage"
-          ]
-        },
-        "createdBy": {
-          "type": "string"
+        "pemilik_id": {
+          "type": "integer"
         },
         "createdAt": {
           "type": "string"
@@ -889,22 +288,16 @@
       },
       "required": [
         "id",
-        "title",
-        "type",
-        "stock",
-        "description",
-        "electricity",
-        "wide",
-        "imageUrl",
-        "user_id",
+        "booking_id",
+        "payment_id",
+        "picture",
         "admin_id",
-        "approved",
-        "price",
-        "address",
-        "facilities",
-        "rules",
-        "discount",
-        "createdBy",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
         "createdAt",
         "updatedAt"
       ]
@@ -915,86 +308,51 @@
         "id": {
           "type": "integer"
         },
-        "title": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        },
-        "stock": {
-          "type": "null"
-        },
-        "description": {
-          "type": "string"
-        },
-        "electricity": {
-          "type": "boolean"
-        },
-        "wide": {
-          "type": "string"
-        },
-        "imageUrl": {
-          "type": "array",
-          "items": {}
-        },
-        "user_id": {
+        "booking_id": {
           "type": "integer"
+        },
+        "payment_id": {
+          "type": "integer"
+        },
+        "picture": {
+          "type": "null"
         },
         "admin_id": {
           "type": "null"
         },
-        "approved": {
+        "approval_transaction": {
+          "type": "object"
+        },
+        "status_transaction": {
           "type": "object",
           "properties": {
-            "isApprovalRoom": {
+            "status": {
+              "type": "string"
+            },
+            "isSucces": {
               "type": "boolean"
             },
-            "statusApprovalRoom": {
+            "description": {
               "type": "string"
             }
           },
           "required": [
-            "isApprovalRoom",
-            "statusApprovalRoom"
+            "status",
+            "isSucces",
+            "description"
           ]
         },
-        "price": {
-          "type": "object"
+        "total_payment": {
+          "type": "integer"
         },
-        "address": {
-          "type": "object",
-          "properties": {
-            "street": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "street"
-          ]
+        "rental_amount": {
+          "type": "null"
         },
-        "facilities": {
-          "type": "object"
+        "date_transaction": {
+          "type": "null"
         },
-        "rules": {
-          "type": "object"
-        },
-        "discount": {
-          "type": "object",
-          "properties": {
-            "is_discount": {
-              "type": "boolean"
-            },
-            "discount_percentage": {
-              "type": "integer"
-            }
-          },
-          "required": [
-            "is_discount",
-            "discount_percentage"
-          ]
-        },
-        "createdBy": {
-          "type": "string"
+        "pemilik_id": {
+          "type": "integer"
         },
         "createdAt": {
           "type": "string"
@@ -1005,22 +363,16 @@
       },
       "required": [
         "id",
-        "title",
-        "type",
-        "stock",
-        "description",
-        "electricity",
-        "wide",
-        "imageUrl",
-        "user_id",
+        "booking_id",
+        "payment_id",
+        "picture",
         "admin_id",
-        "approved",
-        "price",
-        "address",
-        "facilities",
-        "rules",
-        "discount",
-        "createdBy",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
         "createdAt",
         "updatedAt"
       ]
@@ -1031,86 +383,51 @@
         "id": {
           "type": "integer"
         },
-        "title": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        },
-        "stock": {
-          "type": "null"
-        },
-        "description": {
-          "type": "string"
-        },
-        "electricity": {
-          "type": "boolean"
-        },
-        "wide": {
-          "type": "string"
-        },
-        "imageUrl": {
-          "type": "array",
-          "items": {}
-        },
-        "user_id": {
+        "booking_id": {
           "type": "integer"
+        },
+        "payment_id": {
+          "type": "integer"
+        },
+        "picture": {
+          "type": "null"
         },
         "admin_id": {
           "type": "null"
         },
-        "approved": {
+        "approval_transaction": {
+          "type": "object"
+        },
+        "status_transaction": {
           "type": "object",
           "properties": {
-            "isApprovalRoom": {
+            "status": {
+              "type": "string"
+            },
+            "isSucces": {
               "type": "boolean"
             },
-            "statusApprovalRoom": {
+            "description": {
               "type": "string"
             }
           },
           "required": [
-            "isApprovalRoom",
-            "statusApprovalRoom"
+            "status",
+            "isSucces",
+            "description"
           ]
         },
-        "price": {
-          "type": "object"
+        "total_payment": {
+          "type": "integer"
         },
-        "address": {
-          "type": "object",
-          "properties": {
-            "street": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "street"
-          ]
+        "rental_amount": {
+          "type": "null"
         },
-        "facilities": {
-          "type": "object"
+        "date_transaction": {
+          "type": "null"
         },
-        "rules": {
-          "type": "object"
-        },
-        "discount": {
-          "type": "object",
-          "properties": {
-            "is_discount": {
-              "type": "boolean"
-            },
-            "discount_percentage": {
-              "type": "integer"
-            }
-          },
-          "required": [
-            "is_discount",
-            "discount_percentage"
-          ]
-        },
-        "createdBy": {
-          "type": "string"
+        "pemilik_id": {
+          "type": "integer"
         },
         "createdAt": {
           "type": "string"
@@ -1121,22 +438,16 @@
       },
       "required": [
         "id",
-        "title",
-        "type",
-        "stock",
-        "description",
-        "electricity",
-        "wide",
-        "imageUrl",
-        "user_id",
+        "booking_id",
+        "payment_id",
+        "picture",
         "admin_id",
-        "approved",
-        "price",
-        "address",
-        "facilities",
-        "rules",
-        "discount",
-        "createdBy",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
         "createdAt",
         "updatedAt"
       ]
@@ -1147,86 +458,51 @@
         "id": {
           "type": "integer"
         },
-        "title": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        },
-        "stock": {
+        "booking_id": {
           "type": "integer"
         },
-        "description": {
-          "type": "string"
-        },
-        "electricity": {
-          "type": "boolean"
-        },
-        "wide": {
-          "type": "string"
-        },
-        "imageUrl": {
-          "type": "array",
-          "items": {}
-        },
-        "user_id": {
+        "payment_id": {
           "type": "integer"
+        },
+        "picture": {
+          "type": "null"
         },
         "admin_id": {
           "type": "null"
         },
-        "approved": {
+        "approval_transaction": {
+          "type": "object"
+        },
+        "status_transaction": {
           "type": "object",
           "properties": {
-            "isApprovalRoom": {
+            "status": {
+              "type": "string"
+            },
+            "isSucces": {
               "type": "boolean"
             },
-            "statusApprovalRoom": {
+            "description": {
               "type": "string"
             }
           },
           "required": [
-            "isApprovalRoom",
-            "statusApprovalRoom"
+            "status",
+            "isSucces",
+            "description"
           ]
         },
-        "price": {
-          "type": "object"
+        "total_payment": {
+          "type": "integer"
         },
-        "address": {
-          "type": "object",
-          "properties": {
-            "street": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "street"
-          ]
+        "rental_amount": {
+          "type": "null"
         },
-        "facilities": {
-          "type": "object"
+        "date_transaction": {
+          "type": "null"
         },
-        "rules": {
-          "type": "object"
-        },
-        "discount": {
-          "type": "object",
-          "properties": {
-            "is_discount": {
-              "type": "boolean"
-            },
-            "discount_percentage": {
-              "type": "integer"
-            }
-          },
-          "required": [
-            "is_discount",
-            "discount_percentage"
-          ]
-        },
-        "createdBy": {
-          "type": "string"
+        "pemilik_id": {
+          "type": "integer"
         },
         "createdAt": {
           "type": "string"
@@ -1237,22 +513,16 @@
       },
       "required": [
         "id",
-        "title",
-        "type",
-        "stock",
-        "description",
-        "electricity",
-        "wide",
-        "imageUrl",
-        "user_id",
+        "booking_id",
+        "payment_id",
+        "picture",
         "admin_id",
-        "approved",
-        "price",
-        "address",
-        "facilities",
-        "rules",
-        "discount",
-        "createdBy",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
         "createdAt",
         "updatedAt"
       ]
@@ -1263,234 +533,51 @@
         "id": {
           "type": "integer"
         },
-        "title": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        },
-        "stock": {
+        "booking_id": {
           "type": "integer"
         },
-        "description": {
-          "type": "string"
-        },
-        "electricity": {
-          "type": "boolean"
-        },
-        "wide": {
-          "type": "string"
-        },
-        "imageUrl": {
-          "type": "array",
-          "items": {}
-        },
-        "user_id": {
+        "payment_id": {
           "type": "integer"
+        },
+        "picture": {
+          "type": "null"
         },
         "admin_id": {
           "type": "null"
         },
-        "approved": {
-          "type": "object",
-          "properties": {
-            "isApprovalRoom": {
-              "type": "boolean"
-            },
-            "statusApprovalRoom": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "isApprovalRoom",
-            "statusApprovalRoom"
-          ]
-        },
-        "price": {
+        "approval_transaction": {
           "type": "object"
         },
-        "address": {
+        "status_transaction": {
           "type": "object",
           "properties": {
-            "city": {
+            "status": {
               "type": "string"
             },
-            "street": {
-              "type": "string"
-            },
-            "village": {
-              "type": "string"
-            },
-            "district": {
-              "type": "string"
-            },
-            "province": {
-              "type": "string"
-            },
-            "postal_code": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "city",
-            "street",
-            "village",
-            "district",
-            "province",
-            "postal_code"
-          ]
-        },
-        "facilities": {
-          "type": "object",
-          "properties": {
-            "tv": {
-              "type": "string"
-            },
-            "bed": {
-              "type": "string"
-            },
-            "fan": {
-              "type": "string"
-            },
-            "sink": {
-              "type": "string"
-            },
-            "wifi": {
-              "type": "string"
-            },
-            "chair": {
-              "type": "string"
-            },
-            "table": {
-              "type": "string"
-            },
-            "mirror": {
-              "type": "string"
-            },
-            "pillow": {
-              "type": "string"
-            },
-            "shower": {
-              "type": "string"
-            },
-            "window": {
-              "type": "string"
-            },
-            "bathtub": {
-              "type": "string"
-            },
-            "kitchen": {
-              "type": "string"
-            },
-            "wardrobe": {
-              "type": "string"
-            },
-            "dispenser": {
-              "type": "string"
-            },
-            "hot_water": {
-              "type": "string"
-            },
-            "car_parking": {
-              "type": "string"
-            },
-            "living_room": {
-              "type": "string"
-            },
-            "ventilation": {
-              "type": "string"
-            },
-            "refrigerator": {
-              "type": "string"
-            },
-            "bicycle_parking": {
-              "type": "string"
-            },
-            "inside_bathroom": {
-              "type": "string"
-            },
-            "washing_machine": {
-              "type": "string"
-            },
-            "air_conditioning": {
-              "type": "string"
-            },
-            "outside_bathroom": {
-              "type": "string"
-            },
-            "motorcycle_parking": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "tv",
-            "bed",
-            "fan",
-            "sink",
-            "wifi",
-            "chair",
-            "table",
-            "mirror",
-            "pillow",
-            "shower",
-            "window",
-            "bathtub",
-            "kitchen",
-            "wardrobe",
-            "dispenser",
-            "hot_water",
-            "car_parking",
-            "living_room",
-            "ventilation",
-            "refrigerator",
-            "bicycle_parking",
-            "inside_bathroom",
-            "washing_machine",
-            "air_conditioning",
-            "outside_bathroom",
-            "motorcycle_parking"
-          ]
-        },
-        "rules": {
-          "type": "object",
-          "properties": {
-            "couple": {
-              "type": "string"
-            },
-            "person": {
-              "type": "string"
-            },
-            "deposit": {
-              "type": "string"
-            },
-            "children": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "couple",
-            "person",
-            "deposit",
-            "children"
-          ]
-        },
-        "discount": {
-          "type": "object",
-          "properties": {
-            "is_discount": {
+            "isSucces": {
               "type": "boolean"
             },
-            "discount_percentage": {
-              "type": "integer"
+            "description": {
+              "type": "string"
             }
           },
           "required": [
-            "is_discount",
-            "discount_percentage"
+            "status",
+            "isSucces",
+            "description"
           ]
         },
-        "createdBy": {
-          "type": "string"
+        "total_payment": {
+          "type": "integer"
+        },
+        "rental_amount": {
+          "type": "null"
+        },
+        "date_transaction": {
+          "type": "null"
+        },
+        "pemilik_id": {
+          "type": "integer"
         },
         "createdAt": {
           "type": "string"
@@ -1501,22 +588,16 @@
       },
       "required": [
         "id",
-        "title",
-        "type",
-        "stock",
-        "description",
-        "electricity",
-        "wide",
-        "imageUrl",
-        "user_id",
+        "booking_id",
+        "payment_id",
+        "picture",
         "admin_id",
-        "approved",
-        "price",
-        "address",
-        "facilities",
-        "rules",
-        "discount",
-        "createdBy",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
         "createdAt",
         "updatedAt"
       ]
@@ -1527,234 +608,51 @@
         "id": {
           "type": "integer"
         },
-        "title": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        },
-        "stock": {
+        "booking_id": {
           "type": "integer"
         },
-        "description": {
-          "type": "string"
-        },
-        "electricity": {
-          "type": "boolean"
-        },
-        "wide": {
-          "type": "string"
-        },
-        "imageUrl": {
-          "type": "array",
-          "items": {}
-        },
-        "user_id": {
+        "payment_id": {
           "type": "integer"
+        },
+        "picture": {
+          "type": "null"
         },
         "admin_id": {
           "type": "null"
         },
-        "approved": {
-          "type": "object",
-          "properties": {
-            "isApprovalRoom": {
-              "type": "boolean"
-            },
-            "statusApprovalRoom": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "isApprovalRoom",
-            "statusApprovalRoom"
-          ]
-        },
-        "price": {
+        "approval_transaction": {
           "type": "object"
         },
-        "address": {
+        "status_transaction": {
           "type": "object",
           "properties": {
-            "city": {
+            "status": {
               "type": "string"
             },
-            "street": {
-              "type": "string"
-            },
-            "village": {
-              "type": "string"
-            },
-            "district": {
-              "type": "string"
-            },
-            "province": {
-              "type": "string"
-            },
-            "postal_code": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "city",
-            "street",
-            "village",
-            "district",
-            "province",
-            "postal_code"
-          ]
-        },
-        "facilities": {
-          "type": "object",
-          "properties": {
-            "tv": {
-              "type": "string"
-            },
-            "bed": {
-              "type": "string"
-            },
-            "fan": {
-              "type": "string"
-            },
-            "sink": {
-              "type": "string"
-            },
-            "wifi": {
-              "type": "string"
-            },
-            "chair": {
-              "type": "string"
-            },
-            "table": {
-              "type": "string"
-            },
-            "mirror": {
-              "type": "string"
-            },
-            "pillow": {
-              "type": "string"
-            },
-            "shower": {
-              "type": "string"
-            },
-            "window": {
-              "type": "string"
-            },
-            "bathtub": {
-              "type": "string"
-            },
-            "kitchen": {
-              "type": "string"
-            },
-            "wardrobe": {
-              "type": "string"
-            },
-            "dispenser": {
-              "type": "string"
-            },
-            "hot_water": {
-              "type": "string"
-            },
-            "car_parking": {
-              "type": "string"
-            },
-            "living_room": {
-              "type": "string"
-            },
-            "ventilation": {
-              "type": "string"
-            },
-            "refrigerator": {
-              "type": "string"
-            },
-            "bicycle_parking": {
-              "type": "string"
-            },
-            "inside_bathroom": {
-              "type": "string"
-            },
-            "washing_machine": {
-              "type": "string"
-            },
-            "air_conditioning": {
-              "type": "string"
-            },
-            "outside_bathroom": {
-              "type": "string"
-            },
-            "motorcycle_parking": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "tv",
-            "bed",
-            "fan",
-            "sink",
-            "wifi",
-            "chair",
-            "table",
-            "mirror",
-            "pillow",
-            "shower",
-            "window",
-            "bathtub",
-            "kitchen",
-            "wardrobe",
-            "dispenser",
-            "hot_water",
-            "car_parking",
-            "living_room",
-            "ventilation",
-            "refrigerator",
-            "bicycle_parking",
-            "inside_bathroom",
-            "washing_machine",
-            "air_conditioning",
-            "outside_bathroom",
-            "motorcycle_parking"
-          ]
-        },
-        "rules": {
-          "type": "object",
-          "properties": {
-            "couple": {
-              "type": "string"
-            },
-            "person": {
-              "type": "string"
-            },
-            "deposit": {
-              "type": "string"
-            },
-            "children": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "couple",
-            "person",
-            "deposit",
-            "children"
-          ]
-        },
-        "discount": {
-          "type": "object",
-          "properties": {
-            "is_discount": {
+            "isSucces": {
               "type": "boolean"
             },
-            "discount_percentage": {
-              "type": "integer"
+            "description": {
+              "type": "string"
             }
           },
           "required": [
-            "is_discount",
-            "discount_percentage"
+            "status",
+            "isSucces",
+            "description"
           ]
         },
-        "createdBy": {
-          "type": "string"
+        "total_payment": {
+          "type": "integer"
+        },
+        "rental_amount": {
+          "type": "null"
+        },
+        "date_transaction": {
+          "type": "null"
+        },
+        "pemilik_id": {
+          "type": "integer"
         },
         "createdAt": {
           "type": "string"
@@ -1765,22 +663,16 @@
       },
       "required": [
         "id",
-        "title",
-        "type",
-        "stock",
-        "description",
-        "electricity",
-        "wide",
-        "imageUrl",
-        "user_id",
+        "booking_id",
+        "payment_id",
+        "picture",
         "admin_id",
-        "approved",
-        "price",
-        "address",
-        "facilities",
-        "rules",
-        "discount",
-        "createdBy",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
         "createdAt",
         "updatedAt"
       ]
@@ -1791,234 +683,47 @@
         "id": {
           "type": "integer"
         },
-        "title": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        },
-        "stock": {
+        "booking_id": {
           "type": "integer"
         },
-        "description": {
-          "type": "string"
-        },
-        "electricity": {
-          "type": "boolean"
-        },
-        "wide": {
-          "type": "string"
-        },
-        "imageUrl": {
-          "type": "array",
-          "items": {}
-        },
-        "user_id": {
+        "payment_id": {
           "type": "integer"
+        },
+        "picture": {
+          "type": "string"
         },
         "admin_id": {
-          "type": "null"
+          "type": "integer"
         },
-        "approved": {
+        "approval_transaction": {
           "type": "object",
           "properties": {
-            "isApprovalRoom": {
+            "is_approval": {
               "type": "boolean"
             },
-            "statusApprovalRoom": {
+            "statusApprovalTransaction": {
               "type": "string"
             }
           },
           "required": [
-            "isApprovalRoom",
-            "statusApprovalRoom"
+            "is_approval",
+            "statusApprovalTransaction"
           ]
         },
-        "price": {
+        "status_transaction": {
           "type": "object"
         },
-        "address": {
-          "type": "object",
-          "properties": {
-            "city": {
-              "type": "string"
-            },
-            "street": {
-              "type": "string"
-            },
-            "village": {
-              "type": "string"
-            },
-            "district": {
-              "type": "string"
-            },
-            "province": {
-              "type": "string"
-            },
-            "postal_code": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "city",
-            "street",
-            "village",
-            "district",
-            "province",
-            "postal_code"
-          ]
+        "total_payment": {
+          "type": "integer"
         },
-        "facilities": {
-          "type": "object",
-          "properties": {
-            "tv": {
-              "type": "string"
-            },
-            "bed": {
-              "type": "string"
-            },
-            "fan": {
-              "type": "string"
-            },
-            "sink": {
-              "type": "string"
-            },
-            "wifi": {
-              "type": "string"
-            },
-            "chair": {
-              "type": "string"
-            },
-            "table": {
-              "type": "string"
-            },
-            "mirror": {
-              "type": "string"
-            },
-            "pillow": {
-              "type": "string"
-            },
-            "shower": {
-              "type": "string"
-            },
-            "window": {
-              "type": "string"
-            },
-            "bathtub": {
-              "type": "string"
-            },
-            "kitchen": {
-              "type": "string"
-            },
-            "wardrobe": {
-              "type": "string"
-            },
-            "dispenser": {
-              "type": "string"
-            },
-            "hot_water": {
-              "type": "string"
-            },
-            "car_parking": {
-              "type": "string"
-            },
-            "living_room": {
-              "type": "string"
-            },
-            "ventilation": {
-              "type": "string"
-            },
-            "refrigerator": {
-              "type": "string"
-            },
-            "bicycle_parking": {
-              "type": "string"
-            },
-            "inside_bathroom": {
-              "type": "string"
-            },
-            "washing_machine": {
-              "type": "string"
-            },
-            "air_conditioning": {
-              "type": "string"
-            },
-            "outside_bathroom": {
-              "type": "string"
-            },
-            "motorcycle_parking": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "tv",
-            "bed",
-            "fan",
-            "sink",
-            "wifi",
-            "chair",
-            "table",
-            "mirror",
-            "pillow",
-            "shower",
-            "window",
-            "bathtub",
-            "kitchen",
-            "wardrobe",
-            "dispenser",
-            "hot_water",
-            "car_parking",
-            "living_room",
-            "ventilation",
-            "refrigerator",
-            "bicycle_parking",
-            "inside_bathroom",
-            "washing_machine",
-            "air_conditioning",
-            "outside_bathroom",
-            "motorcycle_parking"
-          ]
+        "rental_amount": {
+          "type": "integer"
         },
-        "rules": {
-          "type": "object",
-          "properties": {
-            "couple": {
-              "type": "string"
-            },
-            "person": {
-              "type": "string"
-            },
-            "deposit": {
-              "type": "string"
-            },
-            "children": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "couple",
-            "person",
-            "deposit",
-            "children"
-          ]
-        },
-        "discount": {
-          "type": "object",
-          "properties": {
-            "is_discount": {
-              "type": "boolean"
-            },
-            "discount_percentage": {
-              "type": "integer"
-            }
-          },
-          "required": [
-            "is_discount",
-            "discount_percentage"
-          ]
-        },
-        "createdBy": {
+        "date_transaction": {
           "type": "string"
+        },
+        "pemilik_id": {
+          "type": "integer"
         },
         "createdAt": {
           "type": "string"
@@ -2029,22 +734,16 @@
       },
       "required": [
         "id",
-        "title",
-        "type",
-        "stock",
-        "description",
-        "electricity",
-        "wide",
-        "imageUrl",
-        "user_id",
+        "booking_id",
+        "payment_id",
+        "picture",
         "admin_id",
-        "approved",
-        "price",
-        "address",
-        "facilities",
-        "rules",
-        "discount",
-        "createdBy",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
         "createdAt",
         "updatedAt"
       ]
@@ -2055,234 +754,59 @@
         "id": {
           "type": "integer"
         },
-        "title": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        },
-        "stock": {
+        "booking_id": {
           "type": "integer"
         },
-        "description": {
-          "type": "string"
-        },
-        "electricity": {
-          "type": "boolean"
-        },
-        "wide": {
-          "type": "string"
-        },
-        "imageUrl": {
-          "type": "array",
-          "items": {}
-        },
-        "user_id": {
+        "payment_id": {
           "type": "integer"
+        },
+        "picture": {
+          "type": "string"
         },
         "admin_id": {
           "type": "null"
         },
-        "approved": {
+        "approval_transaction": {
           "type": "object",
           "properties": {
-            "isApprovalRoom": {
+            "is_approval": {
               "type": "boolean"
             },
-            "statusApprovalRoom": {
+            "statusApprovalTransaction": {
               "type": "string"
             }
           },
           "required": [
-            "isApprovalRoom",
-            "statusApprovalRoom"
+            "is_approval",
+            "statusApprovalTransaction"
           ]
         },
-        "price": {
-          "type": "object"
-        },
-        "address": {
+        "status_transaction": {
           "type": "object",
           "properties": {
-            "city": {
+            "status": {
               "type": "string"
             },
-            "street": {
-              "type": "string"
-            },
-            "village": {
-              "type": "string"
-            },
-            "district": {
-              "type": "string"
-            },
-            "province": {
-              "type": "string"
-            },
-            "postal_code": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "city",
-            "street",
-            "village",
-            "district",
-            "province",
-            "postal_code"
-          ]
-        },
-        "facilities": {
-          "type": "object",
-          "properties": {
-            "tv": {
-              "type": "string"
-            },
-            "bed": {
-              "type": "string"
-            },
-            "fan": {
-              "type": "string"
-            },
-            "sink": {
-              "type": "string"
-            },
-            "wifi": {
-              "type": "string"
-            },
-            "chair": {
-              "type": "string"
-            },
-            "table": {
-              "type": "string"
-            },
-            "mirror": {
-              "type": "string"
-            },
-            "pillow": {
-              "type": "string"
-            },
-            "shower": {
-              "type": "string"
-            },
-            "window": {
-              "type": "string"
-            },
-            "bathtub": {
-              "type": "string"
-            },
-            "kitchen": {
-              "type": "string"
-            },
-            "wardrobe": {
-              "type": "string"
-            },
-            "dispenser": {
-              "type": "string"
-            },
-            "hot_water": {
-              "type": "string"
-            },
-            "car_parking": {
-              "type": "string"
-            },
-            "living_room": {
-              "type": "string"
-            },
-            "ventilation": {
-              "type": "string"
-            },
-            "refrigerator": {
-              "type": "string"
-            },
-            "bicycle_parking": {
-              "type": "string"
-            },
-            "inside_bathroom": {
-              "type": "string"
-            },
-            "washing_machine": {
-              "type": "string"
-            },
-            "air_conditioning": {
-              "type": "string"
-            },
-            "outside_bathroom": {
-              "type": "string"
-            },
-            "motorcycle_parking": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "tv",
-            "bed",
-            "fan",
-            "sink",
-            "wifi",
-            "chair",
-            "table",
-            "mirror",
-            "pillow",
-            "shower",
-            "window",
-            "bathtub",
-            "kitchen",
-            "wardrobe",
-            "dispenser",
-            "hot_water",
-            "car_parking",
-            "living_room",
-            "ventilation",
-            "refrigerator",
-            "bicycle_parking",
-            "inside_bathroom",
-            "washing_machine",
-            "air_conditioning",
-            "outside_bathroom",
-            "motorcycle_parking"
-          ]
-        },
-        "rules": {
-          "type": "object",
-          "properties": {
-            "couple": {
-              "type": "string"
-            },
-            "person": {
-              "type": "string"
-            },
-            "deposit": {
-              "type": "string"
-            },
-            "children": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "couple",
-            "person",
-            "deposit",
-            "children"
-          ]
-        },
-        "discount": {
-          "type": "object",
-          "properties": {
-            "is_discount": {
+            "isSuccess": {
               "type": "boolean"
-            },
-            "discount_percentage": {
-              "type": "integer"
             }
           },
           "required": [
-            "is_discount",
-            "discount_percentage"
+            "status",
+            "isSuccess"
           ]
         },
-        "createdBy": {
+        "total_payment": {
+          "type": "integer"
+        },
+        "rental_amount": {
+          "type": "integer"
+        },
+        "date_transaction": {
           "type": "string"
+        },
+        "pemilik_id": {
+          "type": "integer"
         },
         "createdAt": {
           "type": "string"
@@ -2293,22 +817,16 @@
       },
       "required": [
         "id",
-        "title",
-        "type",
-        "stock",
-        "description",
-        "electricity",
-        "wide",
-        "imageUrl",
-        "user_id",
+        "booking_id",
+        "payment_id",
+        "picture",
         "admin_id",
-        "approved",
-        "price",
-        "address",
-        "facilities",
-        "rules",
-        "discount",
-        "createdBy",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
         "createdAt",
         "updatedAt"
       ]
@@ -2319,86 +837,63 @@
         "id": {
           "type": "integer"
         },
-        "title": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        },
-        "stock": {
-          "type": "null"
-        },
-        "description": {
-          "type": "string"
-        },
-        "electricity": {
-          "type": "boolean"
-        },
-        "wide": {
-          "type": "string"
-        },
-        "imageUrl": {
-          "type": "array",
-          "items": {}
-        },
-        "user_id": {
+        "booking_id": {
           "type": "integer"
         },
-        "admin_id": {
+        "payment_id": {
+          "type": "integer"
+        },
+        "picture": {
           "type": "null"
         },
-        "approved": {
+        "admin_id": {
+          "type": "integer"
+        },
+        "approval_transaction": {
           "type": "object",
           "properties": {
-            "isApprovalRoom": {
+            "description": {
+              "type": "string"
+            },
+            "is_approval": {
               "type": "boolean"
             },
-            "statusApprovalRoom": {
+            "statusApprovalTransaction": {
               "type": "string"
             }
           },
           "required": [
-            "isApprovalRoom",
-            "statusApprovalRoom"
+            "description",
+            "is_approval",
+            "statusApprovalTransaction"
           ]
         },
-        "price": {
-          "type": "object"
-        },
-        "address": {
+        "status_transaction": {
           "type": "object",
           "properties": {
-            "street": {
+            "status": {
               "type": "string"
-            }
-          },
-          "required": [
-            "street"
-          ]
-        },
-        "facilities": {
-          "type": "object"
-        },
-        "rules": {
-          "type": "object"
-        },
-        "discount": {
-          "type": "object",
-          "properties": {
-            "is_discount": {
-              "type": "boolean"
             },
-            "discount_percentage": {
-              "type": "integer"
+            "isSuccess": {
+              "type": "boolean"
             }
           },
           "required": [
-            "is_discount",
-            "discount_percentage"
+            "status",
+            "isSuccess"
           ]
         },
-        "createdBy": {
-          "type": "string"
+        "total_payment": {
+          "type": "integer"
+        },
+        "rental_amount": {
+          "type": "null"
+        },
+        "date_transaction": {
+          "type": "null"
+        },
+        "pemilik_id": {
+          "type": "integer"
         },
         "createdAt": {
           "type": "string"
@@ -2409,22 +904,16 @@
       },
       "required": [
         "id",
-        "title",
-        "type",
-        "stock",
-        "description",
-        "electricity",
-        "wide",
-        "imageUrl",
-        "user_id",
+        "booking_id",
+        "payment_id",
+        "picture",
         "admin_id",
-        "approved",
-        "price",
-        "address",
-        "facilities",
-        "rules",
-        "discount",
-        "createdBy",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
         "createdAt",
         "updatedAt"
       ]
@@ -2435,86 +924,51 @@
         "id": {
           "type": "integer"
         },
-        "title": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        },
-        "stock": {
-          "type": "null"
-        },
-        "description": {
-          "type": "string"
-        },
-        "electricity": {
-          "type": "boolean"
-        },
-        "wide": {
-          "type": "string"
-        },
-        "imageUrl": {
-          "type": "array",
-          "items": {}
-        },
-        "user_id": {
+        "booking_id": {
           "type": "integer"
+        },
+        "payment_id": {
+          "type": "integer"
+        },
+        "picture": {
+          "type": "null"
         },
         "admin_id": {
           "type": "null"
         },
-        "approved": {
+        "approval_transaction": {
+          "type": "object"
+        },
+        "status_transaction": {
           "type": "object",
           "properties": {
-            "isApprovalRoom": {
+            "status": {
+              "type": "string"
+            },
+            "isSucces": {
               "type": "boolean"
             },
-            "statusApprovalRoom": {
+            "description": {
               "type": "string"
             }
           },
           "required": [
-            "isApprovalRoom",
-            "statusApprovalRoom"
+            "status",
+            "isSucces",
+            "description"
           ]
         },
-        "price": {
-          "type": "object"
+        "total_payment": {
+          "type": "integer"
         },
-        "address": {
-          "type": "object",
-          "properties": {
-            "street": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "street"
-          ]
+        "rental_amount": {
+          "type": "null"
         },
-        "facilities": {
-          "type": "object"
+        "date_transaction": {
+          "type": "null"
         },
-        "rules": {
-          "type": "object"
-        },
-        "discount": {
-          "type": "object",
-          "properties": {
-            "is_discount": {
-              "type": "boolean"
-            },
-            "discount_percentage": {
-              "type": "integer"
-            }
-          },
-          "required": [
-            "is_discount",
-            "discount_percentage"
-          ]
-        },
-        "createdBy": {
-          "type": "string"
+        "pemilik_id": {
+          "type": "integer"
         },
         "createdAt": {
           "type": "string"
@@ -2525,22 +979,16 @@
       },
       "required": [
         "id",
-        "title",
-        "type",
-        "stock",
-        "description",
-        "electricity",
-        "wide",
-        "imageUrl",
-        "user_id",
+        "booking_id",
+        "payment_id",
+        "picture",
         "admin_id",
-        "approved",
-        "price",
-        "address",
-        "facilities",
-        "rules",
-        "discount",
-        "createdBy",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
         "createdAt",
         "updatedAt"
       ]
@@ -2551,86 +999,51 @@
         "id": {
           "type": "integer"
         },
-        "title": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        },
-        "stock": {
-          "type": "null"
-        },
-        "description": {
-          "type": "string"
-        },
-        "electricity": {
-          "type": "boolean"
-        },
-        "wide": {
-          "type": "string"
-        },
-        "imageUrl": {
-          "type": "array",
-          "items": {}
-        },
-        "user_id": {
+        "booking_id": {
           "type": "integer"
+        },
+        "payment_id": {
+          "type": "integer"
+        },
+        "picture": {
+          "type": "null"
         },
         "admin_id": {
           "type": "null"
         },
-        "approved": {
+        "approval_transaction": {
+          "type": "object"
+        },
+        "status_transaction": {
           "type": "object",
           "properties": {
-            "isApprovalRoom": {
+            "status": {
+              "type": "string"
+            },
+            "isSucces": {
               "type": "boolean"
             },
-            "statusApprovalRoom": {
+            "description": {
               "type": "string"
             }
           },
           "required": [
-            "isApprovalRoom",
-            "statusApprovalRoom"
+            "status",
+            "isSucces",
+            "description"
           ]
         },
-        "price": {
-          "type": "object"
+        "total_payment": {
+          "type": "integer"
         },
-        "address": {
-          "type": "object",
-          "properties": {
-            "street": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "street"
-          ]
+        "rental_amount": {
+          "type": "null"
         },
-        "facilities": {
-          "type": "object"
+        "date_transaction": {
+          "type": "null"
         },
-        "rules": {
-          "type": "object"
-        },
-        "discount": {
-          "type": "object",
-          "properties": {
-            "is_discount": {
-              "type": "boolean"
-            },
-            "discount_percentage": {
-              "type": "integer"
-            }
-          },
-          "required": [
-            "is_discount",
-            "discount_percentage"
-          ]
-        },
-        "createdBy": {
-          "type": "string"
+        "pemilik_id": {
+          "type": "integer"
         },
         "createdAt": {
           "type": "string"
@@ -2641,22 +1054,16 @@
       },
       "required": [
         "id",
-        "title",
-        "type",
-        "stock",
-        "description",
-        "electricity",
-        "wide",
-        "imageUrl",
-        "user_id",
+        "booking_id",
+        "payment_id",
+        "picture",
         "admin_id",
-        "approved",
-        "price",
-        "address",
-        "facilities",
-        "rules",
-        "discount",
-        "createdBy",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
         "createdAt",
         "updatedAt"
       ]
@@ -2667,250 +1074,59 @@
         "id": {
           "type": "integer"
         },
-        "title": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        },
-        "stock": {
+        "booking_id": {
           "type": "integer"
         },
-        "description": {
-          "type": "string"
-        },
-        "electricity": {
-          "type": "boolean"
-        },
-        "wide": {
-          "type": "string"
-        },
-        "imageUrl": {
-          "type": "array",
-          "items": {}
-        },
-        "user_id": {
+        "payment_id": {
           "type": "integer"
+        },
+        "picture": {
+          "type": "string"
         },
         "admin_id": {
           "type": "null"
         },
-        "approved": {
+        "approval_transaction": {
           "type": "object",
           "properties": {
-            "isApprovalRoom": {
+            "is_approval": {
               "type": "boolean"
             },
-            "statusApprovalRoom": {
+            "statusApprovalTransaction": {
               "type": "string"
             }
           },
           "required": [
-            "isApprovalRoom",
-            "statusApprovalRoom"
+            "is_approval",
+            "statusApprovalTransaction"
           ]
         },
-        "price": {
+        "status_transaction": {
           "type": "object",
           "properties": {
-            "cost_day": {
+            "status": {
               "type": "string"
             },
-            "cost_week": {
-              "type": "string"
-            },
-            "cost_month": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "cost_day",
-            "cost_week",
-            "cost_month"
-          ]
-        },
-        "address": {
-          "type": "object",
-          "properties": {
-            "city": {
-              "type": "string"
-            },
-            "street": {
-              "type": "string"
-            },
-            "village": {
-              "type": "string"
-            },
-            "district": {
-              "type": "string"
-            },
-            "province": {
-              "type": "string"
-            },
-            "postal_code": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "city",
-            "street",
-            "village",
-            "district",
-            "province",
-            "postal_code"
-          ]
-        },
-        "facilities": {
-          "type": "object",
-          "properties": {
-            "tv": {
-              "type": "string"
-            },
-            "bed": {
-              "type": "string"
-            },
-            "fan": {
-              "type": "string"
-            },
-            "sink": {
-              "type": "string"
-            },
-            "wifi": {
-              "type": "string"
-            },
-            "chair": {
-              "type": "string"
-            },
-            "table": {
-              "type": "string"
-            },
-            "mirror": {
-              "type": "string"
-            },
-            "pillow": {
-              "type": "string"
-            },
-            "shower": {
-              "type": "string"
-            },
-            "window": {
-              "type": "string"
-            },
-            "bathtub": {
-              "type": "string"
-            },
-            "kitchen": {
-              "type": "string"
-            },
-            "wardrobe": {
-              "type": "string"
-            },
-            "dispenser": {
-              "type": "string"
-            },
-            "hot_water": {
-              "type": "string"
-            },
-            "car_parking": {
-              "type": "string"
-            },
-            "living_room": {
-              "type": "string"
-            },
-            "ventilation": {
-              "type": "string"
-            },
-            "refrigerator": {
-              "type": "string"
-            },
-            "bicycle_parking": {
-              "type": "string"
-            },
-            "inside_bathroom": {
-              "type": "string"
-            },
-            "washing_machine": {
-              "type": "string"
-            },
-            "air_conditioning": {
-              "type": "string"
-            },
-            "outside_bathroom": {
-              "type": "string"
-            },
-            "motorcycle_parking": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "tv",
-            "bed",
-            "fan",
-            "sink",
-            "wifi",
-            "chair",
-            "table",
-            "mirror",
-            "pillow",
-            "shower",
-            "window",
-            "bathtub",
-            "kitchen",
-            "wardrobe",
-            "dispenser",
-            "hot_water",
-            "car_parking",
-            "living_room",
-            "ventilation",
-            "refrigerator",
-            "bicycle_parking",
-            "inside_bathroom",
-            "washing_machine",
-            "air_conditioning",
-            "outside_bathroom",
-            "motorcycle_parking"
-          ]
-        },
-        "rules": {
-          "type": "object",
-          "properties": {
-            "couple": {
-              "type": "string"
-            },
-            "person": {
-              "type": "string"
-            },
-            "deposit": {
-              "type": "string"
-            },
-            "children": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "couple",
-            "person",
-            "deposit",
-            "children"
-          ]
-        },
-        "discount": {
-          "type": "object",
-          "properties": {
-            "is_discount": {
+            "isSuccess": {
               "type": "boolean"
-            },
-            "discount_percentage": {
-              "type": "integer"
             }
           },
           "required": [
-            "is_discount",
-            "discount_percentage"
+            "status",
+            "isSuccess"
           ]
         },
-        "createdBy": {
+        "total_payment": {
+          "type": "integer"
+        },
+        "rental_amount": {
+          "type": "integer"
+        },
+        "date_transaction": {
           "type": "string"
+        },
+        "pemilik_id": {
+          "type": "integer"
         },
         "createdAt": {
           "type": "string"
@@ -2921,22 +1137,1090 @@
       },
       "required": [
         "id",
-        "title",
-        "type",
-        "stock",
-        "description",
-        "electricity",
-        "wide",
-        "imageUrl",
-        "user_id",
+        "booking_id",
+        "payment_id",
+        "picture",
         "admin_id",
-        "approved",
-        "price",
-        "address",
-        "facilities",
-        "rules",
-        "discount",
-        "createdBy",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "booking_id": {
+          "type": "integer"
+        },
+        "payment_id": {
+          "type": "integer"
+        },
+        "picture": {
+          "type": "null"
+        },
+        "admin_id": {
+          "type": "null"
+        },
+        "approval_transaction": {
+          "type": "object"
+        },
+        "status_transaction": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "isSucces": {
+              "type": "boolean"
+            },
+            "description": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "status",
+            "isSucces",
+            "description"
+          ]
+        },
+        "total_payment": {
+          "type": "integer"
+        },
+        "rental_amount": {
+          "type": "null"
+        },
+        "date_transaction": {
+          "type": "null"
+        },
+        "pemilik_id": {
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "booking_id",
+        "payment_id",
+        "picture",
+        "admin_id",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "booking_id": {
+          "type": "integer"
+        },
+        "payment_id": {
+          "type": "integer"
+        },
+        "picture": {
+          "type": "null"
+        },
+        "admin_id": {
+          "type": "null"
+        },
+        "approval_transaction": {
+          "type": "object"
+        },
+        "status_transaction": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "isSucces": {
+              "type": "boolean"
+            },
+            "description": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "status",
+            "isSucces",
+            "description"
+          ]
+        },
+        "total_payment": {
+          "type": "integer"
+        },
+        "rental_amount": {
+          "type": "null"
+        },
+        "date_transaction": {
+          "type": "null"
+        },
+        "pemilik_id": {
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "booking_id",
+        "payment_id",
+        "picture",
+        "admin_id",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "booking_id": {
+          "type": "integer"
+        },
+        "payment_id": {
+          "type": "integer"
+        },
+        "picture": {
+          "type": "null"
+        },
+        "admin_id": {
+          "type": "null"
+        },
+        "approval_transaction": {
+          "type": "object"
+        },
+        "status_transaction": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "isSucces": {
+              "type": "boolean"
+            },
+            "description": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "status",
+            "isSucces",
+            "description"
+          ]
+        },
+        "total_payment": {
+          "type": "integer"
+        },
+        "rental_amount": {
+          "type": "null"
+        },
+        "date_transaction": {
+          "type": "null"
+        },
+        "pemilik_id": {
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "booking_id",
+        "payment_id",
+        "picture",
+        "admin_id",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "booking_id": {
+          "type": "integer"
+        },
+        "payment_id": {
+          "type": "integer"
+        },
+        "picture": {
+          "type": "null"
+        },
+        "admin_id": {
+          "type": "null"
+        },
+        "approval_transaction": {
+          "type": "object"
+        },
+        "status_transaction": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "isSucces": {
+              "type": "boolean"
+            },
+            "description": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "status",
+            "isSucces",
+            "description"
+          ]
+        },
+        "total_payment": {
+          "type": "integer"
+        },
+        "rental_amount": {
+          "type": "null"
+        },
+        "date_transaction": {
+          "type": "null"
+        },
+        "pemilik_id": {
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "booking_id",
+        "payment_id",
+        "picture",
+        "admin_id",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "booking_id": {
+          "type": "integer"
+        },
+        "payment_id": {
+          "type": "integer"
+        },
+        "picture": {
+          "type": "null"
+        },
+        "admin_id": {
+          "type": "null"
+        },
+        "approval_transaction": {
+          "type": "object"
+        },
+        "status_transaction": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "isSucces": {
+              "type": "boolean"
+            },
+            "description": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "status",
+            "isSucces",
+            "description"
+          ]
+        },
+        "total_payment": {
+          "type": "integer"
+        },
+        "rental_amount": {
+          "type": "null"
+        },
+        "date_transaction": {
+          "type": "null"
+        },
+        "pemilik_id": {
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "booking_id",
+        "payment_id",
+        "picture",
+        "admin_id",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "booking_id": {
+          "type": "integer"
+        },
+        "payment_id": {
+          "type": "integer"
+        },
+        "picture": {
+          "type": "null"
+        },
+        "admin_id": {
+          "type": "null"
+        },
+        "approval_transaction": {
+          "type": "object"
+        },
+        "status_transaction": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "isSucces": {
+              "type": "boolean"
+            },
+            "description": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "status",
+            "isSucces",
+            "description"
+          ]
+        },
+        "total_payment": {
+          "type": "integer"
+        },
+        "rental_amount": {
+          "type": "null"
+        },
+        "date_transaction": {
+          "type": "null"
+        },
+        "pemilik_id": {
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "booking_id",
+        "payment_id",
+        "picture",
+        "admin_id",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "booking_id": {
+          "type": "integer"
+        },
+        "payment_id": {
+          "type": "integer"
+        },
+        "picture": {
+          "type": "null"
+        },
+        "admin_id": {
+          "type": "null"
+        },
+        "approval_transaction": {
+          "type": "object"
+        },
+        "status_transaction": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "isSucces": {
+              "type": "boolean"
+            },
+            "description": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "status",
+            "isSucces",
+            "description"
+          ]
+        },
+        "total_payment": {
+          "type": "integer"
+        },
+        "rental_amount": {
+          "type": "null"
+        },
+        "date_transaction": {
+          "type": "null"
+        },
+        "pemilik_id": {
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "booking_id",
+        "payment_id",
+        "picture",
+        "admin_id",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "booking_id": {
+          "type": "integer"
+        },
+        "payment_id": {
+          "type": "integer"
+        },
+        "picture": {
+          "type": "null"
+        },
+        "admin_id": {
+          "type": "null"
+        },
+        "approval_transaction": {
+          "type": "object"
+        },
+        "status_transaction": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "isSucces": {
+              "type": "boolean"
+            },
+            "description": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "status",
+            "isSucces",
+            "description"
+          ]
+        },
+        "total_payment": {
+          "type": "integer"
+        },
+        "rental_amount": {
+          "type": "null"
+        },
+        "date_transaction": {
+          "type": "null"
+        },
+        "pemilik_id": {
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "booking_id",
+        "payment_id",
+        "picture",
+        "admin_id",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "booking_id": {
+          "type": "integer"
+        },
+        "payment_id": {
+          "type": "integer"
+        },
+        "picture": {
+          "type": "string"
+        },
+        "admin_id": {
+          "type": "null"
+        },
+        "approval_transaction": {
+          "type": "object",
+          "properties": {
+            "is_approval": {
+              "type": "boolean"
+            },
+            "statusApprovalTransaction": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "is_approval",
+            "statusApprovalTransaction"
+          ]
+        },
+        "status_transaction": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "isSuccess": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "status",
+            "isSuccess"
+          ]
+        },
+        "total_payment": {
+          "type": "integer"
+        },
+        "rental_amount": {
+          "type": "integer"
+        },
+        "date_transaction": {
+          "type": "string"
+        },
+        "pemilik_id": {
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "booking_id",
+        "payment_id",
+        "picture",
+        "admin_id",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "booking_id": {
+          "type": "integer"
+        },
+        "payment_id": {
+          "type": "integer"
+        },
+        "picture": {
+          "type": "string"
+        },
+        "admin_id": {
+          "type": "null"
+        },
+        "approval_transaction": {
+          "type": "object",
+          "properties": {
+            "is_approval": {
+              "type": "boolean"
+            },
+            "statusApprovalTransaction": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "is_approval",
+            "statusApprovalTransaction"
+          ]
+        },
+        "status_transaction": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "isSuccess": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "status",
+            "isSuccess"
+          ]
+        },
+        "total_payment": {
+          "type": "integer"
+        },
+        "rental_amount": {
+          "type": "integer"
+        },
+        "date_transaction": {
+          "type": "string"
+        },
+        "pemilik_id": {
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "booking_id",
+        "payment_id",
+        "picture",
+        "admin_id",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "booking_id": {
+          "type": "integer"
+        },
+        "payment_id": {
+          "type": "integer"
+        },
+        "picture": {
+          "type": "null"
+        },
+        "admin_id": {
+          "type": "null"
+        },
+        "approval_transaction": {
+          "type": "object"
+        },
+        "status_transaction": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "isSuccess": {
+              "type": "boolean"
+            },
+            "description": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "status",
+            "isSuccess",
+            "description"
+          ]
+        },
+        "total_payment": {
+          "type": "integer"
+        },
+        "rental_amount": {
+          "type": "null"
+        },
+        "date_transaction": {
+          "type": "null"
+        },
+        "pemilik_id": {
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "booking_id",
+        "payment_id",
+        "picture",
+        "admin_id",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "booking_id": {
+          "type": "integer"
+        },
+        "payment_id": {
+          "type": "integer"
+        },
+        "picture": {
+          "type": "null"
+        },
+        "admin_id": {
+          "type": "null"
+        },
+        "approval_transaction": {
+          "type": "object"
+        },
+        "status_transaction": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "isSucces": {
+              "type": "boolean"
+            },
+            "description": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "status",
+            "isSucces",
+            "description"
+          ]
+        },
+        "total_payment": {
+          "type": "integer"
+        },
+        "rental_amount": {
+          "type": "null"
+        },
+        "date_transaction": {
+          "type": "null"
+        },
+        "pemilik_id": {
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "booking_id",
+        "payment_id",
+        "picture",
+        "admin_id",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "booking_id": {
+          "type": "integer"
+        },
+        "payment_id": {
+          "type": "integer"
+        },
+        "picture": {
+          "type": "null"
+        },
+        "admin_id": {
+          "type": "null"
+        },
+        "approval_transaction": {
+          "type": "object"
+        },
+        "status_transaction": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "isSucces": {
+              "type": "boolean"
+            },
+            "description": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "status",
+            "isSucces",
+            "description"
+          ]
+        },
+        "total_payment": {
+          "type": "integer"
+        },
+        "rental_amount": {
+          "type": "null"
+        },
+        "date_transaction": {
+          "type": "null"
+        },
+        "pemilik_id": {
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "booking_id",
+        "payment_id",
+        "picture",
+        "admin_id",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "booking_id": {
+          "type": "integer"
+        },
+        "payment_id": {
+          "type": "integer"
+        },
+        "picture": {
+          "type": "string"
+        },
+        "admin_id": {
+          "type": "integer"
+        },
+        "approval_transaction": {
+          "type": "object",
+          "properties": {
+            "is_approval": {
+              "type": "boolean"
+            },
+            "statusApprovalTransaction": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "is_approval",
+            "statusApprovalTransaction"
+          ]
+        },
+        "status_transaction": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "isSuccess": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "status",
+            "isSuccess"
+          ]
+        },
+        "total_payment": {
+          "type": "integer"
+        },
+        "rental_amount": {
+          "type": "integer"
+        },
+        "date_transaction": {
+          "type": "string"
+        },
+        "pemilik_id": {
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "booking_id",
+        "payment_id",
+        "picture",
+        "admin_id",
+        "approval_transaction",
+        "status_transaction",
+        "total_payment",
+        "rental_amount",
+        "date_transaction",
+        "pemilik_id",
         "createdAt",
         "updatedAt"
       ]

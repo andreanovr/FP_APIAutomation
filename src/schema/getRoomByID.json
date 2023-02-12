@@ -1,4 +1,5 @@
 {
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
     "id": {
@@ -24,27 +25,301 @@
     },
     "imageUrl": {
       "type": "array",
-      "items": {}
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "filename": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "url",
+            "id",
+            "filename"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "filename": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "url",
+            "id",
+            "filename"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "filename": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "url",
+            "id",
+            "filename"
+          ]
+        }
+      ]
     },
     "price": {
-      "type": "object"
-    },
-    "address": {
       "type": "object",
       "properties": {
-        "street": {
+        "cost_day": {
+          "type": "string"
+        },
+        "cost_week": {
+          "type": "string"
+        },
+        "cost_month": {
           "type": "string"
         }
       },
       "required": [
-        "street"
+        "cost_day",
+        "cost_week",
+        "cost_month"
+      ]
+    },
+    "address": {
+      "type": "object",
+      "properties": {
+        "city": {
+          "type": "string"
+        },
+        "street": {
+          "type": "string"
+        },
+        "village": {
+          "type": "string"
+        },
+        "district": {
+          "type": "string"
+        },
+        "province": {
+          "type": "string"
+        },
+        "postal_code": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "city",
+        "street",
+        "village",
+        "district",
+        "province",
+        "postal_code"
       ]
     },
     "facilities": {
-      "type": "object"
+      "type": "object",
+      "properties": {
+        "bed": {
+          "type": "string"
+        },
+        "fan": {
+          "type": "string"
+        },
+        "iron": {
+          "type": "string"
+        },
+        "sink": {
+          "type": "string"
+        },
+        "wifi": {
+          "type": "string"
+        },
+        "chair": {
+          "type": "string"
+        },
+        "table": {
+          "type": "string"
+        },
+        "mirror": {
+          "type": "string"
+        },
+        "pillow": {
+          "type": "string"
+        },
+        "shower": {
+          "type": "string"
+        },
+        "window": {
+          "type": "string"
+        },
+        "bathtub": {
+          "type": "string"
+        },
+        "kitchen": {
+          "type": "string"
+        },
+        "loundry": {
+          "type": "string"
+        },
+        "mushola": {
+          "type": "string"
+        },
+        "tvinroom": {
+          "type": "string"
+        },
+        "wardrobe": {
+          "type": "string"
+        },
+        "dispenser": {
+          "type": "string"
+        },
+        "hot_water": {
+          "type": "string"
+        },
+        "car_parking": {
+          "type": "string"
+        },
+        "living_room": {
+          "type": "string"
+        },
+        "seat_toilet": {
+          "type": "string"
+        },
+        "ventilation": {
+          "type": "string"
+        },
+        "refrigerator": {
+          "type": "string"
+        },
+        "squat_toilet": {
+          "type": "string"
+        },
+        "tvinlivingroom": {
+          "type": "string"
+        },
+        "bicycle_parking": {
+          "type": "string"
+        },
+        "inside_bathroom": {
+          "type": "string"
+        },
+        "washing_machine": {
+          "type": "string"
+        },
+        "air_conditioning": {
+          "type": "string"
+        },
+        "outside_bathroom": {
+          "type": "string"
+        },
+        "motorcycle_parking": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "bed",
+        "fan",
+        "iron",
+        "sink",
+        "wifi",
+        "chair",
+        "table",
+        "mirror",
+        "pillow",
+        "shower",
+        "window",
+        "bathtub",
+        "kitchen",
+        "loundry",
+        "mushola",
+        "tvinroom",
+        "wardrobe",
+        "dispenser",
+        "hot_water",
+        "car_parking",
+        "living_room",
+        "seat_toilet",
+        "ventilation",
+        "refrigerator",
+        "squat_toilet",
+        "tvinlivingroom",
+        "bicycle_parking",
+        "inside_bathroom",
+        "washing_machine",
+        "air_conditioning",
+        "outside_bathroom",
+        "motorcycle_parking"
+      ]
     },
     "rules": {
-      "type": "object"
+      "type": "object",
+      "properties": {
+        "pet": {
+          "type": "string"
+        },
+        "couple": {
+          "type": "string"
+        },
+        "person": {
+          "type": "string"
+        },
+        "check_in": {
+          "type": "string"
+        },
+        "children": {
+          "type": "string"
+        },
+        "check_out": {
+          "type": "string"
+        },
+        "add_electricity": {
+          "type": "string"
+        },
+        "smoking_in_room": {
+          "type": "string"
+        },
+        "special_student": {
+          "type": "string"
+        },
+        "special_employee": {
+          "type": "string"
+        },
+        "twf_hours_access": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "pet",
+        "couple",
+        "person",
+        "check_in",
+        "children",
+        "check_out",
+        "add_electricity",
+        "smoking_in_room",
+        "special_student",
+        "special_employee",
+        "twf_hours_access"
+      ]
     },
     "discount": {
       "type": "object",
@@ -64,8 +339,76 @@
     "createdBy": {
       "type": "string"
     },
-    "updatedAt": {
-      "type": "string"
+    "oauth_user": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "user_detail": {
+          "type": "object",
+          "properties": {
+            "nama_lengkap": {
+              "type": "string"
+            },
+            "tanggal_lahir": {
+              "type": "string"
+            },
+            "gender": {
+              "type": "string"
+            },
+            "kota_asal": {
+              "type": "string"
+            },
+            "no_telepon": {
+              "type": "string"
+            },
+            "profesi": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "bank": {
+              "type": "string"
+            },
+            "no_rekening": {
+              "type": "string"
+            },
+            "image": {
+              "type": "string"
+            },
+            "user_id": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "nama_lengkap",
+            "tanggal_lahir",
+            "gender",
+            "kota_asal",
+            "no_telepon",
+            "profesi",
+            "status",
+            "bank",
+            "no_rekening",
+            "image",
+            "user_id"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "username",
+        "email",
+        "user_detail"
+      ]
     }
   },
   "required": [
@@ -83,6 +426,6 @@
     "rules",
     "discount",
     "createdBy",
-    "updatedAt"
+    "oauth_user"
   ]
 }

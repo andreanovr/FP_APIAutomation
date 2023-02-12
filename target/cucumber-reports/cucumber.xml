@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="9.809">
-    <testcase classname="roomData" name="TC_100 - Check API Get All Promo Room By Owner Functionality" time="9.589">
-        <system-out><![CDATA[Given API Get All Promo Room By Owner.......................................passed
-]]></system-out>
-    </testcase>
-</testsuite>

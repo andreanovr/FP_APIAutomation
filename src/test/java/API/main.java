@@ -24,7 +24,7 @@ public class main extends config {
                 .when().post(baseUrlBE + "signup")
                 .then().assertThat().statusCode(200)
                 .body("data", equalTo("Thanks, please check your email for activation."))
-                .body("message", equalTo("sukses"))
+                .body("message", equalTo("Sukses"))
                 .body("status", equalTo("200"))
                 .body(JsonSchemaValidator.matchesJsonSchema(
                         new File("src/schema/register.json")))
@@ -45,7 +45,7 @@ public class main extends config {
                 .when().post(baseUrlBE + "send-otp")
                 .then().assertThat().statusCode(200)
                 .body("data", equalTo("Thanks, please check your email for activation."))
-                .body("message", equalTo("sukses"))
+                .body("message", equalTo("Sukses"))
                 .body("status", equalTo("200"))
                 .body(JsonSchemaValidator.matchesJsonSchema(
                         new File("src/schema/registerSendOTP.json")))
@@ -79,7 +79,8 @@ public class main extends config {
                 .when().post(baseUrlBE + "forget")
                 .then().assertThat().statusCode(200)
                 .body("status", equalTo("200"))
-                .body("message", equalTo("sukses"))
+                .body("data", equalTo("Thanks, please check your email as the token for changing password has been sent."))
+                .body("message", equalTo("Sukses"))
                 .body(JsonSchemaValidator.matchesJsonSchema(
                         new File("src/schema/forgotPassword.json")))
                 .extract().response().asString();
@@ -179,7 +180,7 @@ public class main extends config {
                 .formParam("electricity","1")
                 .formParam("wide","15x15")
                 .formParam("street","Jalan Nangka")
-                .when().put(baseUrlFSW+idFlow)
+                .when().put(baseUrlFSW+"22")
                 .then().assertThat().statusCode(200)
                 .body("message", equalTo("Room update"))
                 .body(JsonSchemaValidator.matchesJsonSchema(
@@ -202,7 +203,7 @@ public class main extends config {
     public void searchKos() {
         given().log().all()
                 .header("Content-Type", "application/json")
-                .when().get(baseUrlFSW+"search?keyword="+keyword)
+                .when().get(baseUrlFSW+"filter?search="+keyword)
                 .then().assertThat().statusCode(200)
                 .body(JsonSchemaValidator.matchesJsonSchema(
                         new File("src/schema/searchKos.json")))
@@ -214,8 +215,8 @@ public class main extends config {
         String response = given().log().all()
                 .header("Content-Type", "application/json")
                 .body("{\n" +
-                        "    \"email\": \""+superField+"\",\n" +
-                        "    \"password\": \""+superField+"\"\n" +
+                        "    \"email\": \""+usernameAdmin+"\",\n" +
+                        "    \"password\": \""+passwordAdmin+"\"\n" +
                         "}")
                 .when().post(baseUrlBE + "login")
                 .then().extract().response().asString();
@@ -239,8 +240,8 @@ public class main extends config {
         String response = given().log().all()
                 .header("Content-Type", "application/json")
                 .body("{\n" +
-                        "    \"email\": \""+superField+"\",\n" +
-                        "    \"password\": \""+superField+"\"\n" +
+                        "    \"email\": \""+usernameAdmin+"\",\n" +
+                        "    \"password\": \""+passwordAdmin+"\"\n" +
                         "}")
                 .when().post(baseUrlBE + "login")
                 .then().extract().response().asString();
@@ -252,7 +253,7 @@ public class main extends config {
         given().log().all()
                 .header("Content-Type", "application/json")
                 .header("authorization", "bearer " +accessToken)
-                .when().get(baseUrlFSW+"approval/list-need-approval")
+                .when().get(baseUrlFSW+"transaction/all")
                 .then().assertThat().statusCode(200)
                 .body(JsonSchemaValidator.matchesJsonSchema(
                         new File("src/schema/allRoomNeedApproval.json")))

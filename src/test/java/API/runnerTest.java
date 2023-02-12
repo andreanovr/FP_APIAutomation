@@ -8,9 +8,9 @@ import io.cucumber.testng.CucumberOptions;
         glue = {"API"},
         plugin = {
                 "pretty",
-                "html:target/cucumber-reports/cucumber.html",
-                "junit:target/cucumber-reports/cucumber.xml",
-                "json:target/cucumber-reports/cucumber.json"
+                "html:target/cucumber-reports/cucumber reports room data.html",
+                "junit:target/cucumber-reports/cucumber reports room data.xml",
+                "json:target/cucumber-reports/cucumber reports room data.json"
         }
 )
 
